@@ -1,4 +1,12 @@
 SKILL_INFO_LIST = {
+	[SKID.NV_BASIC] = {
+		"NV_BASIC",
+		SkillName = "Habilidades Básicas",
+		MaxLv =  9,
+		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+		bSeperateLv = false,
+		AttackRange = { 1, 1, 1, 1, 1, 1, 1, 1, 1 }
+	},
 	[SKID.NPC_GROUNDDRIVE] = {
 		"NPC_GROUNDDRIVE",
 		SkillName = "Ground Drive",
@@ -772,7 +780,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_RUWACH] = {
 		"AL_RUWACH",
-		SkillName = "Ruwach",
+		SkillName = "Revelação",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -986,7 +994,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_PNEUMA] = {
 		"AL_PNEUMA",
-		SkillName = "Pneuma",
+		SkillName = "Escudo Sagrado",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -1067,7 +1075,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.ASC_METEORASSAULT] = {
 		"ASC_METEORASSAULT",
-		SkillName = "Meteor Assault",
+		SkillName = "Impacto Meteoro",
 		MaxLv = 10,
 		SpAmount = { 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 },
 		bSeperateLv = true,
@@ -1081,7 +1089,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.ASC_CDP] = {
 		"ASC_CDP",
-		SkillName = "Create Deadly Poison",
+		SkillName = "Criar Veneno Mortal",
 		MaxLv = 1,
 		SpAmount = { 50 },
 		bSeperateLv = false,
@@ -1329,7 +1337,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_WARP] = {
 		"AL_WARP",
-		SkillName = "Warp Portal",
+		SkillName = "Portal",
 		MaxLv = 4,
 		SpAmount = { 35, 32, 29, 26 },
 		bSeperateLv = false,
@@ -1508,7 +1516,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_HEAL] = {
 		"AL_HEAL",
-		SkillName = "Heal",
+		SkillName = "Curar",
 		MaxLv = 10,
 		SpAmount = { 13, 16, 19, 22, 25, 28, 31, 34, 37, 40 },
 		bSeperateLv = true,
@@ -1701,7 +1709,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_INCAGI] = {
 		"AL_INCAGI",
-		SkillName = "Increase Agility",
+		SkillName = "Aumentar Agilidade",
 		MaxLv = 10,
 		SpAmount = { 18, 21, 24, 27, 30, 33, 36, 39, 42, 45 },
 		bSeperateLv = true,
@@ -1872,7 +1880,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_DECAGI] = {
 		"AL_DECAGI",
-		SkillName = "Decrease Agility",
+		SkillName = "Diminuir Agilidade",
 		MaxLv = 10,
 		SpAmount = { 15, 17, 19, 21, 23, 25, 27, 29, 31, 33 },
 		bSeperateLv = true,
@@ -2181,7 +2189,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_VENOMIMPRESS] = {
 		"GC_VENOMIMPRESS",
-		SkillName = "Venom Impress",
+		SkillName = "Potencializar Veneno",
 		MaxLv = 5,
 		SpAmount = { 12, 16, 20, 24, 28 },
 		bSeperateLv = true,
@@ -2189,7 +2197,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_CREATENEWPOISON] = {
 		"GC_CREATENEWPOISON",
-		SkillName = "Create New Poison",
+		SkillName = "Criar Toxina",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -2200,7 +2208,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_COUNTERSLASH] = {
 		"GC_COUNTERSLASH",
-		SkillName = "Counter Slash",
+		SkillName = "Retaliação",
 		MaxLv = 10,
 		SpAmount = { 5, 8, 11, 14, 17, 19, 21, 23, 25, 27 },
 		bSeperateLv = true,
@@ -2211,7 +2219,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_CLOAKINGEXCEED] = {
 		"GC_CLOAKINGEXCEED",
-		SkillName = "Cloaking Exceed",
+		SkillName = "Ocultação",
 		MaxLv = 5,
 		SpAmount = { 45, 45, 45, 45, 45 },
 		bSeperateLv = false,
@@ -2222,7 +2230,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_CROSSRIPPERSLASHER] = {
 		"GC_CROSSRIPPERSLASHER",
-		SkillName = "Cross Ripper Slasher",
+		SkillName = "Castigo de Loki",
 		MaxLv = 5,
 		SpAmount = { 20, 24, 28, 32, 36 },
 		bSeperateLv = true,
@@ -2242,14 +2250,16 @@ SKILL_INFO_LIST = {
 			{ SKID.AL_BLESSING, 1 }
 		}
 	},
-	[SKID.SM_SWORD] = {
-		"SM_SWORD",
-		SkillName = "Sword Mastery",
-		MaxLv = 10,
-		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-		bSeperateLv = false,
-		AttackRange = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
-	},
+	[SKID.SM_SWORD] = 
+	{
+		[[SM_SWORD]], 
+		SkillName = [[Perícia com Espada]], 
+		MaxLv = 10, 
+		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, 
+		bSeperateLv = false, 
+		AttackRange = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, }, 
+	}, 
+
 	[SKID.AL_CRUCIS] = {
 		"AL_CRUCIS",
 		SkillName = "Signum Crucis",
@@ -2495,7 +2505,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_BLESSING] = {
 		"AL_BLESSING",
-		SkillName = "Blessing",
+		SkillName = "Benção",
 		MaxLv = 10,
 		SpAmount = { 28, 32, 36, 40, 44, 48, 52, 56, 60, 64 },
 		bSeperateLv = true,
@@ -2631,7 +2641,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_CURE] = {
 		"AL_CURE",
-		SkillName = "Cure",
+		SkillName = "Medicar",
 		MaxLv = 1,
 		SpAmount = { 15 },
 		bSeperateLv = false,
@@ -2766,7 +2776,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_INCCARRY] = {
 		"MC_INCCARRY",
-		SkillName = "Enlarge Weight Limit",
+		SkillName = "Aumentar Capacidade de Carga",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -2886,7 +2896,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_DISCOUNT] = {
 		"MC_DISCOUNT",
-		SkillName = "Discount",
+		SkillName = "Desconto",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3017,7 +3027,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_OVERCHARGE] = {
 		"MC_OVERCHARGE",
-		SkillName = "Overcharge",
+		SkillName = "Superfaturar",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3148,7 +3158,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_PUSHCART] = {
 		"MC_PUSHCART",
-		SkillName = "Pushcart",
+		SkillName = "Usar Carrinho",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3287,7 +3297,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_IDENTIFY] = {
 		"MC_IDENTIFY",
-		SkillName = "Item Appraisal",
+		SkillName = "Identificar Item",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -3447,7 +3457,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_VENDING] = {
 		"MC_VENDING",
-		SkillName = "Vending",
+		SkillName = "Comércio",
 		MaxLv = 10,
 		SpAmount = { 30, 30, 30, 30, 30, 30, 30, 30, 30, 30 },
 		bSeperateLv = false,
@@ -3635,7 +3645,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_MAMMONITE] = {
 		"MC_MAMMONITE",
-		SkillName = "Mammonite",
+		SkillName = "Mammonita",
 		MaxLv = 10,
 		SpAmount = { 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 },
 		bSeperateLv = true,
@@ -3768,7 +3778,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_OWL] = {
 		"AC_OWL",
-		SkillName = "Owl's Eye",
+		SkillName = "Precisão",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3832,7 +3842,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_VULTURE] = {
 		"AC_VULTURE",
-		SkillName = "Vulture's Eye",
+		SkillName = "Olhos de Águia",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3845,7 +3855,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_CONCENTRATION] = {
 		"AC_CONCENTRATION",
-		SkillName = "Improve Concentration",
+		SkillName = "Concentração",
 		MaxLv = 10,
 		SpAmount = { 25, 30, 35, 40, 45, 50, 55, 60, 65, 70 },
 		bSeperateLv = true,
@@ -3856,7 +3866,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_DOUBLE] = {
 		"AC_DOUBLE",
-		SkillName = "Double Strafe",
+		SkillName = "Rajada de Flechas",
 		MaxLv = 10,
 		SpAmount = { 12, 12, 12, 12, 12, 12, 12, 12, 12, 12 },
 		bSeperateLv = false,
@@ -3908,7 +3918,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_SHOWER] = {
 		"AC_SHOWER",
-		SkillName = "Arrow Shower",
+		SkillName = "Chuva de Flechas",
 		MaxLv = 10,
 		SpAmount = { 15, 15, 15, 15, 15, 15, 15, 15, 15, 15 },
 		bSeperateLv = false,
@@ -3925,20 +3935,22 @@ SKILL_INFO_LIST = {
 		bSeperateLv = false,
 		AttackRange = { 1 }
 	},
-	[SKID.SM_TWOHAND] = {
-		"SM_TWOHAND",
-		SkillName = "Two-Handed Sword Mastery",
-		MaxLv = 10,
-		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-		bSeperateLv = false,
-		AttackRange = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
-		_NeedSkillList = {
-			{ SKID.SM_SWORD, 1 }
-		}
-	},
+	[SKID.SM_TWOHAND] = 
+	{
+		[[SM_TWOHAND]], 
+		SkillName = [[Perícia com Espada de Duas Mãos]], 
+		MaxLv = 10, 
+		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, 
+		bSeperateLv = false, 
+		AttackRange = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, }, 
+		_NeedSkillList = 
+		{
+			{ SKID.SM_SWORD, 1, }, 
+		}, 
+	}, 
 	[SKID.TF_DOUBLE] = {
 		"TF_DOUBLE",
-		SkillName = "Double Attack",
+		SkillName = "Ataque Duplo",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3970,7 +3982,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_MISS] = {
 		"TF_MISS",
-		SkillName = "Improve Dodge",
+		SkillName = "Perícia em Esquiva",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -3986,7 +3998,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_STEAL] = {
 		"TF_STEAL",
-		SkillName = "Steal",
+		SkillName = "Furto",
 		MaxLv = 10,
 		SpAmount = { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
 		bSeperateLv = false,
@@ -3994,7 +4006,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_HIDING] = {
 		"TF_HIDING",
-		SkillName = "Hiding",
+		SkillName = "Esconderijo",
 		MaxLv = 10,
 		SpAmount = { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
 		bSeperateLv = true,
@@ -4005,7 +4017,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_POISON] = {
 		"TF_POISON",
-		SkillName = "Envenom",
+		SkillName = "Envenenar",
 		MaxLv = 10,
 		SpAmount = { 12, 12, 12, 12, 12, 12, 12, 12, 12, 12 },
 		bSeperateLv = false,
@@ -4013,7 +4025,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_DETOXIFY] = {
 		"TF_DETOXIFY",
-		SkillName = "Detoxify",
+		SkillName = "Desintoxicar",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -4024,7 +4036,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.ALL_RESURRECTION] = {
 		"ALL_RESURRECTION",
-		SkillName = "Resurrection",
+		SkillName = "Ressuscitar",
 		MaxLv = 4,
 		SpAmount = { 60, 60, 60, 60 },
 		bSeperateLv = false,
@@ -4036,7 +4048,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.KN_SPEARMASTERY] = {
 		"KN_SPEARMASTERY",
-		SkillName = "Spear Mastery",
+		SkillName = "Perícia com Lança",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -4199,7 +4211,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_SONICACCEL] = {
 		"AS_SONICACCEL",
-		SkillName = "Sonic Acceleration",
+		SkillName = "Lâminas Aceleradas",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 0 },
@@ -4208,7 +4220,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_VENOMKNIFE] = {
 		"AS_VENOMKNIFE",
-		SkillName = "Venom Knife",
+		SkillName = "Faca Envenenada",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 15 },
@@ -4343,7 +4355,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_RECOVERY] = {
 		"SM_RECOVERY",
-		SkillName = "Increase HP Recovery",
+		SkillName = "Aumentar Recuperação de HP",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -5030,7 +5042,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_BASH] = {
 		"SM_BASH",
-		SkillName = "Bash",
+		SkillName = "Golpe Fulminante",
 		MaxLv = 10,
 		SpAmount = { 8, 8, 8, 8, 8, 15, 15, 15, 15, 15 },
 		bSeperateLv = true,
@@ -5308,7 +5320,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_PROVOKE] = {
 		"SM_PROVOKE",
-		SkillName = "Provoke",
+		SkillName = "Provocar",
 		MaxLv = 10,
 		SpAmount = { 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 },
 		bSeperateLv = true,
@@ -5327,7 +5339,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MA_CHARGEARROW] = {
 		"MA_CHARGEARROW",
-		SkillName = "Charge Arrow",
+		SkillName = "Disparo Violento",
 		MaxLv = 1,
 		SpAmount = { 15 },
 		bSeperateLv = false,
@@ -5521,7 +5533,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_MAGNUM] = {
 		"SM_MAGNUM",
-		SkillName = "Magnum Break",
+		SkillName = "Impacto Explosivo",
 		MaxLv = 10,
 		SpAmount = { 30, 30, 30, 30, 30, 30, 30, 30, 30, 30 },
 		bSeperateLv = false,
@@ -5819,7 +5831,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_CROSSIMPACT] = {
 		"GC_CROSSIMPACT",
-		SkillName = "Cross Impact",
+		SkillName = "Lâminas Retalhadoras",
 		MaxLv = 5,
 		SpAmount = { 40, 40, 40, 40, 40 },
 		bSeperateLv = false,
@@ -5830,7 +5842,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_RESEARCHNEWPOISON] = {
 		"GC_RESEARCHNEWPOISON",
-		SkillName = "Research New Poison",
+		SkillName = "Pesquisa de Toxinas",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -5838,7 +5850,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_ANTIDOTE] = {
 		"GC_ANTIDOTE",
-		SkillName = "Antidote",
+		SkillName = "Antídoto",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -5849,7 +5861,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_WEAPONBLOCKING] = {
 		"GC_WEAPONBLOCKING",
-		SkillName = "Weapon Blocking",
+		SkillName = "Reflexo de Combate",
 		MaxLv = 5,
 		SpAmount = { 40, 36, 32, 28, 24 },
 		bSeperateLv = true,
@@ -5871,7 +5883,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_POISONSMOKE] = {
 		"GC_POISONSMOKE",
-		SkillName = "Poison Smoke",
+		SkillName = "Nevoeiro Tóxico",
 		MaxLv = 5,
 		SpAmount = { 40, 40, 40, 40, 40 },
 		bSeperateLv = false,
@@ -5883,7 +5895,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_PHANTOMMENACE] = {
 		"GC_PHANTOMMENACE",
-		SkillName = "Phantom Menace",
+		SkillName = "Ameaça Fantasma",
 		MaxLv = 1,
 		SpAmount = { 30 },
 		bSeperateLv = false,
@@ -5895,7 +5907,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_ROLLINGCUTTER] = {
 		"GC_ROLLINGCUTTER",
-		SkillName = "Rolling Cutter",
+		SkillName = "Lâminas de Loki",
 		MaxLv = 5,
 		SpAmount = { 5, 5, 5, 5, 5 },
 		bSeperateLv = false,
@@ -5941,7 +5953,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_ENDURE] = {
 		"SM_ENDURE",
-		SkillName = "Endure",
+		SkillName = "Vigor",
 		MaxLv = 10,
 		SpAmount = { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 },
 		bSeperateLv = false,
@@ -6060,7 +6072,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_RIGHT] = {
 		"AS_RIGHT",
-		SkillName = "Righthand Mastery",
+		SkillName = "Perícia com Mão Direita",
 		MaxLv = 5,
 		SpAmount = { 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -6076,7 +6088,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_LEFT] = {
 		"AS_LEFT",
-		SkillName = "Lefthand Mastery",
+		SkillName = "Perícia com Mão Esquerda",
 		MaxLv = 5,
 		SpAmount = { 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -6087,7 +6099,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_KATAR] = {
 		"AS_KATAR",
-		SkillName = "Katar Mastery",
+		SkillName = "Perícia com Katar",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -6095,7 +6107,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_CLOAKING] = {
 		"AS_CLOAKING",
-		SkillName = "Cloaking",
+		SkillName = "Furtividade",
 		MaxLv = 10,
 		SpAmount = { 15, 15, 15, 15, 15, 15, 15, 15, 15, 15 },
 		bSeperateLv = false,
@@ -6106,7 +6118,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_SONICBLOW] = {
 		"AS_SONICBLOW",
-		SkillName = "Sonic Blow",
+		SkillName = "Lâminas Destruidoras",
 		MaxLv = 10,
 		SpAmount = { 16, 18, 20, 22, 24, 26, 28, 30, 32, 34 },
 		bSeperateLv = true,
@@ -6117,7 +6129,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_GRIMTOOTH] = {
 		"AS_GRIMTOOTH",
-		SkillName = "Grimtooth",
+		SkillName = "Tocaia",
 		MaxLv = 5,
 		SpAmount = { 3, 3, 3, 3, 3 },
 		bSeperateLv = false,
@@ -6129,7 +6141,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_ENCHANTPOISON] = {
 		"AS_ENCHANTPOISON",
-		SkillName = "Enchant Poison",
+		SkillName = "Envenenar Arma",
 		MaxLv = 10,
 		SpAmount = { 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 },
 		bSeperateLv = false,
@@ -6170,7 +6182,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_POISONREACT] = {
 		"AS_POISONREACT",
-		SkillName = "Poison React",
+		SkillName = "Refletir Veneno",
 		MaxLv = 10,
 		SpAmount = { 25, 30, 35, 40, 45, 50, 55, 60, 45, 45 },
 		bSeperateLv = false,
@@ -6200,7 +6212,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_VENOMDUST] = {
 		"AS_VENOMDUST",
-		SkillName = "Venom Dust",
+		SkillName = "Névoa Tóxica",
 		MaxLv = 10,
 		SpAmount = { 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 },
 		bSeperateLv = false,
@@ -6242,7 +6254,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AS_SPLASHER] = {
 		"AS_SPLASHER",
-		SkillName = "Venom Splasher",
+		SkillName = "Explosão Tóxica",
 		MaxLv = 10,
 		SpAmount = { 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 },
 		bSeperateLv = true,
@@ -6287,7 +6299,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.NV_FIRSTAID] = {
 		"NV_FIRSTAID",
-		SkillName = "First Aid",
+		SkillName = "Primeiros Socorros",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 3 },
@@ -6326,7 +6338,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.NV_TRICKDEAD] = {
 		"NV_TRICKDEAD",
-		SkillName = "Play Dead",
+		SkillName = "Fingir de Morto",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 5 },
@@ -6357,7 +6369,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_SRECOVERY] = {
 		"MG_SRECOVERY",
-		SkillName = "Increase SP Recovery",
+		SkillName = "Aumentar Recuperação de SP",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -6365,7 +6377,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_MOVINGRECOVERY] = {
 		"SM_MOVINGRECOVERY",
-		SkillName = "Moving HP Recovery",
+		SkillName = "Recuperar HP em Movimento",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 0 },
@@ -6407,7 +6419,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_FATALBLOW] = {
 		"SM_FATALBLOW",
-		SkillName = "Fatal Blow",
+		SkillName = "Ataque Fatal",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 0 },
@@ -6439,7 +6451,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SM_AUTOBERSERK] = {
 		"SM_AUTOBERSERK",
-		SkillName = "Auto Berserk",
+		SkillName = "Instinto de Sobrevivência",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 1 },
@@ -6448,7 +6460,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_MAKINGARROW] = {
 		"AC_MAKINGARROW",
-		SkillName = "Arrow Crafting",
+		SkillName = "Fabricar Flechas",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 10 },
@@ -6468,7 +6480,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AC_CHARGEARROW] = {
 		"AC_CHARGEARROW",
-		SkillName = "Charge Arrow",
+		SkillName = "Disparo Violento",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 15 },
@@ -6477,7 +6489,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_SPRINKLESAND] = {
 		"TF_SPRINKLESAND",
-		SkillName = "Sprinkle Sand",
+		SkillName = "Chutar Areia",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 9 },
@@ -6486,7 +6498,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_BACKSLIDING] = {
 		"TF_BACKSLIDING",
-		SkillName = "Back Slide",
+		SkillName = "Recuar",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 7 },
@@ -6495,7 +6507,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_PICKSTONE] = {
 		"TF_PICKSTONE",
-		SkillName = "Pick Stone",
+		SkillName = "Procurar Pedras",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 2 },
@@ -6526,7 +6538,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.TF_THROWSTONE] = {
 		"TF_THROWSTONE",
-		SkillName = "Throw Stone",
+		SkillName = "Arremessar Pedra",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 2 },
@@ -6546,7 +6558,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_CARTREVOLUTION] = {
 		"MC_CARTREVOLUTION",
-		SkillName = "Cart Revolution",
+		SkillName = "Cavalo-de-Pau",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 12 },
@@ -6589,7 +6601,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_CHANGECART] = {
 		"MC_CHANGECART",
-		SkillName = "Change Cart",
+		SkillName = "Personalizar Carrinho",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 40 },
@@ -6620,7 +6632,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_LOUD] = {
 		"MC_LOUD",
-		SkillName = "Crazy Uproar",
+		SkillName = "Grito de Guerra",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 8 },
@@ -6640,7 +6652,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_HOLYLIGHT] = {
 		"AL_HOLYLIGHT",
-		SkillName = "Holy Light",
+		SkillName = "Luz Divina",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 15 },
@@ -6668,7 +6680,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_ENERGYCOAT] = {
 		"MG_ENERGYCOAT",
-		SkillName = "Energy Coat",
+		SkillName = "Proteção Arcana",
 		MaxLv = 1,
 		Type = "Quest",
 		SpAmount = { 30 },
@@ -6685,7 +6697,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_SIGHT] = {
 		"MG_SIGHT",
-		SkillName = "Sight",
+		SkillName = "Chama Reveladora",
 		MaxLv = 1,
 		SpAmount = { 10 },
 		bSeperateLv = false,
@@ -6741,7 +6753,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_NAPALMBEAT] = {
 		"MG_NAPALMBEAT",
-		SkillName = "Napalm Beat",
+		SkillName = "Vulcão Napalm",
 		MaxLv = 10,
 		SpAmount = { 9, 9, 9, 12, 12, 12, 15, 15, 15, 18 },
 		bSeperateLv = false,
@@ -6797,7 +6809,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_SAFETYWALL] = {
 		"MG_SAFETYWALL",
-		SkillName = "Safety Wall",
+		SkillName = "Escudo Mágico",
 		MaxLv = 10,
 		SpAmount = { 30, 30, 30, 35, 35, 35, 40, 40, 40, 40 },
 		bSeperateLv = true,
@@ -6862,7 +6874,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_SOULSTRIKE] = {
 		"MG_SOULSTRIKE",
-		SkillName = "Soul Strike",
+		SkillName = "Espíritos Anciões",
 		MaxLv = 10,
 		SpAmount = { 18, 14, 24, 20, 30, 26, 36, 32, 42, 38 },
 		bSeperateLv = true,
@@ -7045,7 +7057,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_COLDBOLT] = {
 		"MG_COLDBOLT",
-		SkillName = "Cold Bolt",
+		SkillName = "Lanças de Gelo",
 		MaxLv = 10,
 		SpAmount = { 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 },
 		bSeperateLv = true,
@@ -7142,7 +7154,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MER_INCAGI] = {
 		"MER_INCAGI",
-		SkillName = "Increase Agility",
+		SkillName = "Aumentar Agilidade",
 		MaxLv = 10,
 		SpAmount = { 18, 21, 24, 27, 30, 33, 36, 39, 42, 45 },
 		bSeperateLv = false,
@@ -7158,7 +7170,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MER_BLESSING] = {
 		"MER_BLESSING",
-		SkillName = "Blessing",
+		SkillName = "Benção",
 		MaxLv = 10,
 		SpAmount = { 28, 32, 36, 40, 44, 48, 52, 56, 60, 64 },
 		bSeperateLv = false,
@@ -7317,7 +7329,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MA_SHOWER] = {
 		"MA_SHOWER",
-		SkillName = "Arrow Shower",
+		SkillName = "Chuva de Flechas",
 		MaxLv = 10,
 		SpAmount = { 15, 15, 15, 15, 15, 15, 15, 15, 15, 15 },
 		bSeperateLv = false,
@@ -7593,7 +7605,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_FROSTDIVER] = {
 		"MG_FROSTDIVER",
-		SkillName = "Frost Diver",
+		SkillName = "Rajada Congelante",
 		MaxLv = 10,
 		SpAmount = { 25, 24, 23, 22, 21, 20, 19, 18, 17, 16 },
 		bSeperateLv = false,
@@ -8123,17 +8135,9 @@ SKILL_INFO_LIST = {
 			{ SKID.SO_DIAMONDDUST, 3 }
 		}
 	},
-	[SKID.NV_BASIC] = {
-		"NV_BASIC",
-		SkillName = "Habilidades BÃ¡sicas",
-		MaxLv = 9,
-		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-		bSeperateLv = false,
-		AttackRange = { 1, 1, 1, 1, 1, 1, 1, 1, 1 }
-	},
 	[SKID.MG_STONECURSE] = {
 		"MG_STONECURSE",
-		SkillName = "Stone Curse",
+		SkillName = "Petrificar",
 		MaxLv = 10,
 		SpAmount = { 25, 24, 23, 22, 21, 20, 19, 18, 17, 16 },
 		bSeperateLv = false,
@@ -8482,7 +8486,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_FIREBALL] = {
 		"MG_FIREBALL",
-		SkillName = "Fire Ball",
+		SkillName = "Bolas de Fogo",
 		MaxLv = 10,
 		SpAmount = { 25, 25, 25, 25, 25, 25, 25, 25, 25, 25 },
 		bSeperateLv = false,
@@ -8854,7 +8858,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_FIREWALL] = {
 		"MG_FIREWALL",
-		SkillName = "Fire Wall",
+		SkillName = "Barreira de Fogo",
 		MaxLv = 10,
 		SpAmount = { 40, 40, 40, 40, 40, 40, 40, 40, 40, 40 },
 		bSeperateLv = false,
@@ -9143,7 +9147,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_FIREBOLT] = {
 		"MG_FIREBOLT",
-		SkillName = "Fire Bolt",
+		SkillName = "Lanças de Fogo",
 		MaxLv = 10,
 		SpAmount = { 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 },
 		bSeperateLv = true,
@@ -9463,7 +9467,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_LIGHTNINGBOLT] = {
 		"MG_LIGHTNINGBOLT",
-		SkillName = "Lightning Bolt",
+		SkillName = "Relâmpago",
 		MaxLv = 10,
 		SpAmount = { 12, 14, 16, 18, 20, 22, 24, 26, 28, 30 },
 		bSeperateLv = true,
@@ -9801,7 +9805,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MG_THUNDERSTORM] = {
 		"MG_THUNDERSTORM",
-		SkillName = "Thunder Storm",
+		SkillName = "Tempestade de Raios",
 		MaxLv = 10,
 		SpAmount = { 29, 34, 39, 44, 49, 54, 59, 64, 69, 74 },
 		bSeperateLv = true,
@@ -10143,7 +10147,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_DP] = {
 		"AL_DP",
-		SkillName = "Divine Protection",
+		SkillName = "Proteção Divina",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -10372,7 +10376,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_HALLUCINATIONWALK] = {
 		"GC_HALLUCINATIONWALK",
-		SkillName = "Hallucination Walk",
+		SkillName = "Passos da Ilusão",
 		MaxLv = 5,
 		SpAmount = { 100, 100, 100, 100, 100 },
 		bSeperateLv = false,
@@ -10396,7 +10400,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_VENOMPRESSURE] = {
 		"GC_VENOMPRESSURE",
-		SkillName = "Venom Pressure",
+		SkillName = "Intoxicar",
 		MaxLv = 5,
 		SpAmount = { 30, 40, 50, 60, 70 },
 		bSeperateLv = false,
@@ -10421,7 +10425,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_WEAPONCRUSH] = {
 		"GC_WEAPONCRUSH",
-		SkillName = "Weapon Crush",
+		SkillName = "Estilhaçar Arma",
 		MaxLv = 5,
 		SpAmount = { 20, 20, 20, 20, 20 },
 		bSeperateLv = false,
@@ -10444,7 +10448,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_POISONINGWEAPON] = {
 		"GC_POISONINGWEAPON",
-		SkillName = "Poisoning Weapon",
+		SkillName = "Aplicar Toxina",
 		MaxLv = 5,
 		SpAmount = { 20, 24, 28, 32, 36 },
 		bSeperateLv = true,
@@ -10466,7 +10470,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.GC_DARKILLUSION] = {
 		"GC_DARKILLUSION",
-		SkillName = "Dark Illusion",
+		SkillName = "Passo Sombrio",
 		MaxLv = 5,
 		SpAmount = { 20, 25, 30, 35, 40 },
 		bSeperateLv = true,
@@ -10506,7 +10510,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.AL_DEMONBANE] = {
 		"AL_DEMONBANE",
-		SkillName = "Demon Bane",
+		SkillName = "Flagelo do Mal",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -10688,7 +10692,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.ASC_KATAR] = {
 		"ASC_KATAR",
-		SkillName = "Advanced Katar Mastery",
+		SkillName = "Perícia com Katar Avançada",
 		MaxLv = 5,
 		SpAmount = { 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -10724,7 +10728,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.ASC_EDP] = {
 		"ASC_EDP",
-		SkillName = "Enchant Deadly Poison",
+		SkillName = "Encantar com Veneno Mortal",
 		MaxLv = 5,
 		SpAmount = { 60, 70, 80, 90, 100 },
 		bSeperateLv = true,
@@ -10743,7 +10747,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.ASC_BREAKER] = {
 		"ASC_BREAKER",
-		SkillName = "Soul Destroyer",
+		SkillName = "Destruidor de Almas",
 		MaxLv = 10,
 		SpAmount = { 60, 60, 60, 60, 60, 60, 60, 60, 60, 60 },
 		bSeperateLv = true,
@@ -11180,16 +11184,17 @@ SKILL_INFO_LIST = {
 		bSeperateLv = false,
 		AttackRange = { 2 }
 	},
-	[SKID.GC_DARKCROW] = {
+[SKID.GC_DARKCROW] = {
 		"GC_DARKCROW",
-		SkillName = "Dark Claw",
+		SkillName = "Garra Sombria",
 		MaxLv = 5,
 		SpAmount = { 22, 34, 46, 58, 70 },
 		bSeperateLv = true,
 		AttackRange = { 1, 1, 1, 1, 1 },
 		_NeedSkillList = {
 			{ SKID.GC_DARKILLUSION, 5 }
-		}
+		
+	},
 	},
 	[SKID.RA_UNLIMIT] = {
 		"RA_UNLIMIT",
@@ -11436,7 +11441,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.MC_CARTDECORATE] = {
 		"MC_CARTDECORATE",
-		SkillName = "Change Cart 2",
+		SkillName = "Personalizar Carrinho 2",
 		MaxLv = 1,
 		SpAmount = { 40 },
 		bSeperateLv = false,
@@ -13706,7 +13711,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_DANCING_KNIFE] = {
 		"SHC_DANCING_KNIFE",
-		SkillName = "Dancing Knives",
+		SkillName = "Dança das Adagas",
 		MaxLv = 5,
 		SpAmount = { 40, 45, 50, 55, 60 },
 		bSeperateLv = true,
@@ -13717,7 +13722,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_SAVAGE_IMPACT] = {
 		"SHC_SAVAGE_IMPACT",
-		SkillName = "Savage Impact",
+		SkillName = "Impacto Selvagem",
 		MaxLv = 10,
 		SpAmount = { 28, 31, 34, 37, 40, 43, 46, 49, 52, 55 },
 		bSeperateLv = true,
@@ -13729,7 +13734,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_SHADOW_SENSE] = {
 		"SHC_SHADOW_SENSE",
-		SkillName = "Shadow Sense",
+		SkillName = "Sentido das Sombras",
 		MaxLv = 10,
 		SpAmount = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 		bSeperateLv = false,
@@ -15105,7 +15110,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.NPC_DEADLYCURSE2] = {
 		"NPC_DEADLYCURSE2",
-		SkillName = "¿ÍÀÌµå µ¥µé¸® Ä¿½º",
+		SkillName = "¿???¥µ? ?½º",
 		MaxLv = 5,
 		SpAmount = { 0, 0, 0, 0, 0 },
 		bSeperateLv = true,
