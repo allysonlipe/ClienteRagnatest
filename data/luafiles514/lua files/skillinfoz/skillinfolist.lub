@@ -13742,7 +13742,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_ETERNAL_SLASH] = {
 		"SHC_ETERNAL_SLASH",
-		SkillName = "Eternal Slash",
+		SkillName = "Corte Eterno",
 		MaxLv = 5,
 		SpAmount = { 40, 40, 40, 40, 40 },
 		bSeperateLv = true,
@@ -13755,7 +13755,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_ENCHANTING_SHADOW] = {
 		"SHC_ENCHANTING_SHADOW",
-		SkillName = "Enchanting Shadow",
+		SkillName = "Sombra Encantada",
 		MaxLv = 5,
 		SpAmount = { 30, 40, 50, 60, 70 },
 		bSeperateLv = true,
@@ -13767,7 +13767,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_POTENT_VENOM] = {
 		"SHC_POTENT_VENOM",
-		SkillName = "Potent Venom",
+		SkillName = "Veneno Potente",
 		MaxLv = 10,
 		SpAmount = { 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 },
 		bSeperateLv = true,
@@ -13779,7 +13779,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_SHADOW_EXCEED] = {
 		"SHC_SHADOW_EXCEED",
-		SkillName = "Shadow Exceed",
+		SkillName = "Sombra Excedida",
 		MaxLv = 10,
 		SpAmount = { 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 },
 		ApAmount = {  150, 150, 150, 150, 150, 150, 150, 150, 150, 150 },
@@ -13793,7 +13793,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_FATAL_SHADOW_CROW] = {
 		"SHC_FATAL_SHADOW_CROW",
-		SkillName = "Fatal Shadow Crow",
+		SkillName = "Corvo Fatal das Sombras",
 		MaxLv = 10,
 		SpAmount = { 150, 150, 150, 150, 150, 150, 150, 150, 150, 150 },
 		ApAmount = {  150, 150, 150, 150, 150, 150, 150, 150, 150, 150 },
@@ -13806,7 +13806,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_SHADOW_STAB] = {
 		"SHC_SHADOW_STAB",
-		SkillName = "Shadow Stab",
+		SkillName = "Facada das Sombras",
 		MaxLv = 5,
 		SpAmount = { 45, 50, 55, 60, 65 },
 		bSeperateLv = true,
@@ -13820,7 +13820,7 @@ SKILL_INFO_LIST = {
 	},
 	[SKID.SHC_IMPACT_CRATER] = {
 		"SHC_IMPACT_CRATER",
-		SkillName = "Impact Crater",
+		SkillName = "Cratera de Impacto",
 		MaxLv = 5,
 		SpAmount = { 43, 46, 49, 52, 55 },
 		bSeperateLv = true,
