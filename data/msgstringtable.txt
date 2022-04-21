@@ -1376,8 +1376,8 @@ Você recebeu uma nova missão.#
 ^777777Condições para aquisição:#
 Descrições#
 Os pontos de habilidade gastos não podem ser revertidos. Quer gastar o(s) ponto(s) de habilidade?#
-1ª #
-2ª - T#
+1#
+2#
 Esta conta foi usada por um programa ilegal ou de hacking. Tempo de Bloqueio: %s#
 Foi detectada a possibilidade de exposição a programa ilegal, infecção por vírus de computador ou ferramenta de hacking. Por favor, execute o programa-cliente oficial. Nossa equipe está tentando criar o melhor ambiente para jogadores do RagnaTeste.#
 Agora você está jogando no melhor ambiente de jogo. Aproveite o Ragnarok Online.#
@@ -1393,7 +1393,7 @@ RoK Point: %d RoK Point#
 Free Cash: %d Cash#
 An user of this server cannot connect to free server#
 Sua senha expirou. Por favor, conecte-se novamente#
-3ª #
+3#
 Esta habilidade não pode ser usada neste item.#
 Você não pode utilizar a habilidade porque excedeu a quantidade de Ancillas que pode carregar#
 necessita de Água Benta#
@@ -1401,7 +1401,7 @@ necessita de Ancilla#
 Não pode ser duplicado nesta distância#
 Para usar esta habilidade, você precisa de outras habilidades#
 Não é permitido conversar neste mapa#
-3 horas se passaram#
+3 horas se passaram#s
 5 horas se passaram#
 Foram encontrados erros de inicialização do Game Guard ou o programa está usando uma versão antiga. Reinstale o programa tente novamente#
 O arquivo ini está faltando ou foi alterado.#
@@ -1993,8 +1993,8 @@ Início do registro#
 Peso: %3d / %3d#
 Total: %s Cash#
 Você precisa equipar [Shuriken] para usar essa habilidade.#
-Nv. Base %d#
-Nv. Classe %d#
+Base: %d#
+Classe: %d#
 Zeny: %s#
 Trilinear#
 Ataque#
